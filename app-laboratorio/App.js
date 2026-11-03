@@ -1,20 +1,33 @@
 import { StyleSheet, Text, View } from 'react-native';
+// objeto: exatamente o da Aula 05
 const aluno = {
-nome: 'Ana Beatriz',
-idade: 23,
-cidade: "Cruzeiro do Oeste",
-
+  nome: "Ana Beatriz",
+  turma: "3C",
+  nota1: 7.5,
+  nota2: 9.0,
 };
+// funcao com return: exatamente a da Aula 02
+function calcularMedia(a) {
+  return (a.nota1 + a.nota2) / 2;
+}
+function situacao(media) {
+  if (media >= 6) {
+    return 'Aprovado';
+  }
+  return 'Em recuperacao';
+}
 export default function App() {
-  const nome = "Bruna Maciel"
+  const media = calcularMedia(aluno);
   return (
     <View style={styles.container}>
-      <Text>{aluno.nome}</Text>
-      <Text>{aluno.idade}</Text>
-      <Text>{aluno.cidade}</Text>
+      <Text style={styles.titulo}>{aluno.nome}</Text>
+      <Text>Turma: {aluno.turma}</Text>
+      <Text>Media: {media}</Text>
+      <Text style={styles.situacao}>{situacao(media)}</Text>
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
