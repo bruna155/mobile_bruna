@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const nome = "Bruna Maciel"
   return (
     <View style={styles.container}>
-      <Text>Bruna Maciel</Text>
+      <Text>{nome}</Text>
     </View>
   );
 }
