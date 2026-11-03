@@ -4,7 +4,7 @@ const aluno = {
   nome: "Ana Beatriz",
   turma: "3C",
   nota1: 7.5,
-  nota2: 9.0,
+  nota2: 10,
 };
 // funcao com return: exatamente a da Aula 02
 function calcularMedia(a) {
