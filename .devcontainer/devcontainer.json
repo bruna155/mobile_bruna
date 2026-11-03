@@ -1,0 +1,25 @@
+{
+  "name": "Programacao Mobile 3M",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "postCreateCommand": "cd app-laboratorio && npm install",
+  "forwardPorts": [8081],
+  "portsAttributes": {
+    "8081": {
+      "label": "app",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "expo.vscode-expo-tools",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.eol": "\n"
+      }
+    }
+  }
+}

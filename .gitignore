@@ -1,0 +1,19 @@
+# dependencias: nunca vao para o Git
+node_modules/
+
+# arquivos de trabalho do Expo e do Metro
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.tsbuildinfo
+
+# sistema operacional e editor
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Exercicio 7 (Desafio) da Aula 01: descomente a linha abaixo
+# ANTES de criar o projeto teste-meu, senao o push leva 20 mil arquivos.
+# teste-meu/
