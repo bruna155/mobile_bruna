@@ -21,7 +21,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.titulo}>{aluno.nome}</Text>
-      <Text>Turma: {aluno.turma}</Text>
+      Turma: {aluno.turma}
       <Text>Media: {media}</Text>
       <Text style={styles.situacao}>{situacao(media)}</Text>
     </View>
